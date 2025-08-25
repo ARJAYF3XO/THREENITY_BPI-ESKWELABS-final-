@@ -1,0 +1,249 @@
+:root {
+  /* Festive & Clean Palette */
+  --primary-color: #C81D11;
+  --secondary-color: #700f09;
+  --bg-color-primary: linear-gradient(135deg, #F7F7F7 0%, #E9E9E9 100%);
+  --bg-color-secondary: #F7F7F7;
+  --text-color-primary: #C81D11;
+  --text-color-secondary: #7A7A7A;
+  --border-color: #C81D11;
+}
+
+/* Global Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: var(--bg-color-primary);
+  color: var(--text-color-primary);
+  transition: all 0.3s ease;
+}
+
+/* Background Colors */
+.bg-custom-secondary {
+  background-color: var(--bg-color-secondary);
+}
+
+.bg-custom-primary {
+  background-image: var(--bg-color-primary);
+}
+
+/* Text Colors */
+.text-custom-primary {
+  color: var(--text-color-primary);
+}
+
+.text-custom-secondary {
+  color: var(--text-color-secondary);
+}
+
+/* Buttons */
+.btn-custom-primary {
+  background-color: var(--primary-color);
+  color: var(--bg-color-secondary);
+  font-weight: 700;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-custom-primary:hover {
+  background-color: var(--secondary-color);
+  color: var(--bg-color-secondary);
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+/* Cards & Borders */
+.card-border-primary {
+  border: 2px solid var(--border-color);
+}
+
+.border-custom-primary {
+  border-color: var(--border-color) !important;
+}
+
+/* Icons */
+.metric-icon {
+  color: var(--primary-color);
+  width: 3rem;
+  height: 3rem;
+}
+
+/* Hover Effects */
+.hover-lift {
+  transition: transform 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+}
+
+/* Close Button */
+.btn-close-custom-primary {
+  filter: invert(0) grayscale(100%) brightness(50%);
+}
+
+/* Dropdown Items */
+.dropdown-item.hover-custom-primary:hover {
+  background-color: var(--primary-color) !important;
+  color: var(--bg-color-secondary) !important;
+}
+
+/* Navigation */
+.nav-item-link {
+  display: block;
+  text-decoration: none;
+  color: var(--text-color-secondary);
+  font-weight: 500;
+  border-radius: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.nav-item-link:hover {
+  color: var(--primary-color);
+  background-color: #D6D6D6;
+}
+
+.nav-item-link.dropdown-toggle {
+  color: var(--primary-color);
+}
+
+.finas-navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+/* Logo */
+.logo-responsive {
+  max-width: 100%;
+  height: auto;
+  max-height: 50px;
+}
+
+/* Navbar Toggler */
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2826, 77, 46, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Footer */
+.bg-custom-footer {
+  background-color: #1e1e1e;
+}
+.stepper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.step {
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+}
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin: auto;
+}
+.step .label {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: inherit;
+ 
+}
+.line {
+  flex: 1;
+  height: 2px;
+  background: #ccc;
+}
+  .step.active .circle {
+   
+    border: 2px solid  #e7251e;;
+    background-color: var(--secondary-color);
+
+   
+  }
+.step-link-1 {
+  color: inherit;            /* remove default blue */
+  text-decoration: none;     /* remove underline */
+  display: inline-block;     /* ensure proper clickable area */
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+ .step-link-1:hover { 
+  transform: scale(1.05); 
+}
+/* 🎚️ Make slider smaller */
+.form-range {
+  height: 0.4rem; /* thinner track */
+}
+
+.form-range::-webkit-slider-thumb {
+  width: 14px;
+  height: 14px;
+  background: var(--primary-color);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.form-range::-moz-range-thumb {
+  width: 14px;
+  height: 14px;
+  background: var(--primary-color);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.form-range::-ms-thumb {
+  width: 14px;
+  height: 14px;
+  background: var(--primary-color);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* 🎨 Customize Outline Primary Buttons */
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--border-color);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  background-color: var(--primary-color);
+  border-color: var(--border-color);
+  color: #fff;
+}
+/* Loader Spinner (red theme) */
+.spinner {
+  border: 5px solid rgba(200, 29, 17, 0.2);
+  border-top: 5px solid #C81D11; /* primary red */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.loading-text {
+  font-weight: 600;
+  color: #C81D11;
+}
